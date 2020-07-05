@@ -3,26 +3,26 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		940B2D5924B25EE000055460 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940B2D5824B25EE000055460 /* AppDelegate.swift */; };
-		940B2D5B24B25EE000055460 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940B2D5A24B25EE000055460 /* ContentView.swift */; };
 		940B2D5D24B25EE200055460 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 940B2D5C24B25EE200055460 /* Assets.xcassets */; };
 		940B2D6024B25EE200055460 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 940B2D5F24B25EE200055460 /* Preview Assets.xcassets */; };
 		940B2D6324B25EE200055460 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 940B2D6124B25EE200055460 /* Main.storyboard */; };
+		940B2D7024B25FF600055460 /* GameView in Frameworks */ = {isa = PBXBuildFile; productRef = 940B2D6F24B25FF600055460 /* GameView */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		940B2D5524B25EE000055460 /* MacBullsEye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacBullsEye.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		940B2D5824B25EE000055460 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		940B2D5A24B25EE000055460 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		940B2D5C24B25EE200055460 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		940B2D5F24B25EE200055460 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		940B2D6224B25EE200055460 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		940B2D6424B25EE200055460 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		940B2D6524B25EE200055460 /* MacBullsEye.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MacBullsEye.entitlements; sourceTree = "<group>"; };
+		940B2D6D24B25FC900055460 /* GameView */ = {isa = PBXFileReference; lastKnownFileType = folder; name = GameView; path = ../BullsEyePlus/Packages/GameView; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				940B2D7024B25FF600055460 /* GameView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -39,8 +40,10 @@
 		940B2D4C24B25EE000055460 = {
 			isa = PBXGroup;
 			children = (
+				940B2D6D24B25FC900055460 /* GameView */,
 				940B2D5724B25EE000055460 /* MacBullsEye */,
 				940B2D5624B25EE000055460 /* Products */,
+				940B2D6E24B25FF600055460 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,7 +59,6 @@
 			isa = PBXGroup;
 			children = (
 				940B2D5824B25EE000055460 /* AppDelegate.swift */,
-				940B2D5A24B25EE000055460 /* ContentView.swift */,
 				940B2D5C24B25EE200055460 /* Assets.xcassets */,
 				940B2D6124B25EE200055460 /* Main.storyboard */,
 				940B2D6424B25EE200055460 /* Info.plist */,
@@ -72,6 +74,13 @@
 				940B2D5F24B25EE200055460 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		940B2D6E24B25FF600055460 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -90,6 +99,9 @@
 			dependencies = (
 			);
 			name = MacBullsEye;
+			packageProductDependencies = (
+				940B2D6F24B25FF600055460 /* GameView */,
+			);
 			productName = MacBullsEye;
 			productReference = 940B2D5524B25EE000055460 /* MacBullsEye.app */;
 			productType = "com.apple.product-type.application";
@@ -145,7 +157,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				940B2D5B24B25EE000055460 /* ContentView.swift in Sources */,
 				940B2D5924B25EE000055460 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -345,6 +356,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		940B2D6F24B25FF600055460 /* GameView */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = GameView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 940B2D4D24B25EE000055460 /* Project object */;
 }

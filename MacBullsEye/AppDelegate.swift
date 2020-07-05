@@ -8,6 +8,7 @@
 
 import Cocoa
 import SwiftUI
+import GameView
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
